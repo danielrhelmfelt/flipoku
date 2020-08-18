@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_start_new_game"
+            android:icon="@drawable/ic_play_game"
+            android:title="@string/new_game" />
+        <item
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/ic_statistics"
+            android:title="@string/statistics" />
+        <item
+            android:id="@+id/nav_theme"
+            android:icon="@drawable/ic_theme"
+            android:title="@string/appearance" />
+        <item
+            android:id="@+id/nav_preferences"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/preferences" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about"
+            android:title="@string/about" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_exit"
+            android:title="@string/exit" />
+    </group>
+
+</menu>

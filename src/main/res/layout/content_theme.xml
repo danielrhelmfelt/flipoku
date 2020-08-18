@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ThemeActivity"
+    tools:showIn="@layout/activity_theme">
+
+    <LinearLayout
+        android:id="@+id/themeLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/settings_padding_left_and_right"
+        android:paddingRight="@dimen/settings_padding_left_and_right">
+
+        <include layout="@layout/content_preview" />
+
+        <LinearLayout
+            android:id="@+id/themeBlock"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_block_height"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|bottom"
+                        android:paddingBottom="@dimen/settings_line_spacing"
+                        android:text="@string/theme"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_title_setting"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:paddingTop="@dimen/settings_line_spacing"
+                        android:text="@string/selected_mode"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_subtitle_setting" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <Spinner
+                    android:id="@+id/themeSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="viewEnd" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linesColorBlock"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_block_height"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|bottom"
+                        android:paddingBottom="@dimen/settings_line_spacing"
+                        android:text="@string/lines"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_title_setting"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/linesColorTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:paddingTop="@dimen/settings_line_spacing"
+                        android:text="@string/board_lines_color"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_subtitle_setting" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:padding="15sp"
+                android:weightSum="1">
+
+                <Switch
+                    android:id="@+id/linesColorSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:thumbTint="@color/colorBlack"
+                    android:trackTint="@color/colorBlack" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_separator_height"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="start|top"
+                    android:text="@string/colors"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_title_setting"
+                    android:textStyle="bold">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/backgroundColorBlock"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_block_height"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|bottom"
+                        android:paddingBottom="@dimen/settings_line_spacing"
+                        android:text="@string/background"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_title_setting"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="start"
+                        android:paddingTop="@dimen/settings_line_spacing"
+                        android:text="Hex (RGB)"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_subtitle_setting" />
+
+                    <TextView
+                        android:id="@+id/backgroundColorTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:text="@color/colorBackground"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size_subtitle_setting" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="15sp"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/backgroundColorLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorBackground"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_preferences"
+                        android:onClick="backgroundColorOnClick"
+                        android:orientation="vertical" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/textColorBlock"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_block_height"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|bottom"
+                        android:paddingBottom="@dimen/settings_line_spacing"
+                        android:text="@string/text"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_title_setting"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="start"
+                        android:paddingTop="@dimen/settings_line_spacing"
+                        android:text="Hex (RGB)"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_subtitle_setting" />
+
+                    <TextView
+                        android:id="@+id/textColorTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:inputType="none"
+                        android:text="@color/colorBlack"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size_subtitle_setting" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="15sp"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/textColorLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorBlack"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_preferences"
+                        android:onClick="textColorOnClick"
+                        android:orientation="vertical" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_separator_height"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

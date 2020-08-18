@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/border_cell" />
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <stroke
+                android:width="5sp"
+                android:color="@color/colorLineSelection" />
+            <corners android:radius="1dp" />
+        </shape>
+    </item>
+</layer-list>

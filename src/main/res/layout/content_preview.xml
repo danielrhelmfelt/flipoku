@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:padding="15sp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="12sp"
+            android:textColor="@android:color/black"
+            android:text="@string/preview_of_board"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/boardPreviewLinearLayout"
+        android:layout_width="235sp"
+        android:layout_height="235sp"
+        android:layout_weight="1"
+        android:background="@drawable/border_table"
+        android:orientation="horizontal"
+        android:padding="5sp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/boardPreviewSubgrid00"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_subgrid"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/cell00"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="00" />
+
+                    <LinearLayout
+                        android:id="@+id/cell10"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="4"
+                            android:textAlignment="center"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cell20"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_selected_row_left"
+                        android:orientation="horizontal"
+                        android:tag="20" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/cell01"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_selected_column_top"
+                        android:orientation="horizontal"
+                        android:tag="01">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cell11"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_selected_column"
+                        android:orientation="horizontal"
+                        android:tag="11">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textAlignment="center"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cell21"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_selected_cross"
+                        android:orientation="horizontal"
+                        android:tag="21" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/cell02"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="02">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="9"
+                            android:textAlignment="center"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cell12"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="12" />
+
+                    <LinearLayout
+                        android:id="@+id/cell22"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_selected_row"
+                        android:orientation="horizontal"
+                        android:tag="22">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="7"
+                            android:textAlignment="center"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/boardPreviewSubgrid10"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_subgrid"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/cell30"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="30">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textAlignment="center"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cell40"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="40" />
+
+                    <LinearLayout
+                        android:id="@+id/cell50"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="50" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/cell31"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_selected_column"
+                        android:orientation="horizontal"
+                        android:tag="31" />
+
+                    <LinearLayout
+                        android:id="@+id/cell41"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_selected_column"
+                        android:orientation="horizontal"
+                        android:tag="41">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:gravity="center"
+                            android:text="8"
+                            android:textAlignment="center"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cell51"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_selected_column_bottom"
+                        android:orientation="horizontal"
+                        android:tag="51" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/cell32"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="32" />
+
+                    <LinearLayout
+                        android:id="@+id/cell42"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="42" />
+
+                    <LinearLayout
+                        android:id="@+id/cell52"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="52">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/boardPreviewSubgrid01"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_subgrid"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/cell03"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="03">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="8"
+                            android:textAlignment="center"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cell13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="13" />
+
+                    <LinearLayout
+                        android:id="@+id/cell23"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_selected_row"
+                        android:orientation="horizontal"
+                        android:tag="23" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/cell04"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="04">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="6"
+                            android:textAlignment="center"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cell14"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="14">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cell24"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_selected_row"
+                        android:orientation="horizontal"
+                        android:tag="24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/cell05"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="05" />
+
+                    <LinearLayout
+                        android:id="@+id/cell15"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="15" />
+
+                    <LinearLayout
+                        android:id="@+id/cell25"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_selected_row_right"
+                        android:orientation="horizontal"
+                        android:tag="25">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textAlignment="center"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/boardPreviewSubgrid11"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_subgrid"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/cell33"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="33">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cell43"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="43" />
+
+                    <LinearLayout
+                        android:id="@+id/cell53"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="53">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="4"
+                            android:textAlignment="center"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/cell34"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="34" />
+
+                    <LinearLayout
+                        android:id="@+id/cell44"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_selected_cell"
+                        android:orientation="horizontal"
+                        android:tag="44">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textAlignment="center"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cell54"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="54" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/cell35"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="35" />
+
+                    <LinearLayout
+                        android:id="@+id/cell45"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="45" />
+
+                    <LinearLayout
+                        android:id="@+id/cell55"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_cell"
+                        android:orientation="horizontal"
+                        android:tag="55">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textAlignment="center"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

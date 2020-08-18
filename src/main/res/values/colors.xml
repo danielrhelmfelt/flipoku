@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">@android:color/transparent</color>
+    <color name="colorLineBoard">#000000</color>
+    <color name="colorLineSelection">#2b7cff</color>
+    <color name="colorText">#000000</color>
+    <color name="colorBackground">#ffffff</color>
+    <color name="colorPencilText">@android:color/darker_gray</color>
+    <color name="colorLineBoardDark">#ffffff</color>
+    <color name="colorLineSelectionDark">#2b7cff</color>
+    <color name="colorTextDark">#ffffff</color>
+    <color name="colorBackgroundDark">#000000</color>
+    <color name="colorPencilTextDark">@android:color/darker_gray</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorGreen">#00ff00</color>
+    <color name="colorBlue">#0000ff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+</resources>

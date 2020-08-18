@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="300dp"
+        android:minWidth="400dp"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_dialog_screen"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_color_seekbar"
+                    android:weightSum="3">
+
+                    <SeekBar
+                        android:id="@+id/brightnessSeekBar"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:max="255"
+                        android:progressBackgroundTint="@color/colorWhite"
+                        android:progressTint="@color/colorBlack"
+                        android:textAlignment="center"
+                        android:thumbTint="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/brightnessTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/padding_color_seekbar"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <SeekBar
+                        android:id="@+id/redSeekBar"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:max="255"
+                        android:progressBackgroundTint="@color/colorRed"
+                        android:progressTint="@color/colorRed"
+                        android:textAlignment="center"
+                        android:thumbTint="@color/colorRed" />
+
+                    <TextView
+                        android:id="@+id/redTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/padding_color_seekbar"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <SeekBar
+                        android:id="@+id/greenSeekBar"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:max="255"
+                        android:progressBackgroundTint="@color/colorGreen"
+                        android:progressTint="@color/colorGreen"
+                        android:textAlignment="center"
+                        android:thumbTint="@color/colorGreen" />
+
+                    <TextView
+                        android:id="@+id/greenTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/padding_color_seekbar"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <SeekBar
+                        android:id="@+id/blueSeekBar"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:max="255"
+                        android:progressBackgroundTint="@color/colorBlue"
+                        android:progressTint="@color/colorBlue"
+                        android:textAlignment="center"
+                        android:thumbTint="@color/colorBlue" />
+
+                    <TextView
+                        android:id="@+id/blueTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/showColorLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="7sp"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="#"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/selectedColorEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/selectColorButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/select" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

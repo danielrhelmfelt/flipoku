@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/border_selected_row" />
+    <item android:left="-32sp">
+        <rotate android:fromDegrees="90">
+            <shape android:shape="line">
+                <stroke
+                    android:width="@dimen/selected_cell_line"
+                    android:color="@color/colorLineSelection" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

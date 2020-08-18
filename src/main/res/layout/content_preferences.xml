@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PreferencesActivity"
+    tools:showIn="@layout/activity_preferences">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/settings_padding_left_and_right"
+        android:paddingRight="@dimen/settings_padding_left_and_right">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_separator_height"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="start|top"
+                    android:text="@string/visibility"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_title_setting"
+                    android:textStyle="bold">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/boardSideBlock"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_block_height"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|bottom"
+                        android:paddingBottom="2sp"
+                        android:text="@string/board_side"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/boardSideTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|top"
+                        android:paddingTop="2sp"
+                        android:text="Lado derecho"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="15sp"
+                android:weightSum="1">
+
+                <Switch
+                    android:id="@+id/boardSideSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:checked="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timerBlock"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_block_height"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|bottom"
+                        android:paddingBottom="2sp"
+                        android:text="@string/timer"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_title_setting"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/timerTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|top"
+                        android:paddingTop="2sp"
+                        android:text="Mostrar cronómetro"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_subtitle_setting" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="15sp"
+                android:weightSum="1">
+
+                <Switch
+                    android:id="@+id/timerSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:thumbTint="@color/colorBlack"
+                    android:trackTint="@color/colorBlack"
+                    android:layout_weight="1"
+                    android:checked="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

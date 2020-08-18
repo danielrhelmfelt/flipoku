@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/border_selected_column" />
+    <item android:bottom="-32sp">
+        <shape android:shape="line">
+            <stroke
+                android:width="@dimen/selected_cell_line"
+                android:color="@color/colorLineSelection" />
+        </shape>
+    </item>
+</layer-list>
