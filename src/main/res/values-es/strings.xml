@@ -34,7 +34,7 @@
     <string name="quantity_of_wins">Victorias:</string>
     <string name="streak_of_victories">Racha de Victorias:</string>
     <string name="selection_line_thickness">Grosor línea selección</string>
-    <string name="unlock_clues">Para ayuda, puedes adquirir cualquiera de mis apps pagas en Google Play.</string>
+    <string name="unlock_clues">Codigo abierto en github.com/danielrhelmfelt/flipoku</string>
     <string name="no_ads_game">Este juego no contiene publicidad y no requiere permisos de acceso a internet.</string>
     <string name="victory">¡EL JUEGO HA SIDO GANADO!</string>
     <string name="defeat">JUEGO PERDIDO (+ de 3 errores)</string>
