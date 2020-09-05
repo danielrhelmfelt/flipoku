@@ -33,7 +33,7 @@
     <string name="quantity_of_wins">Victories:</string>
     <string name="streak_of_victories">Win Streak:</string>
     <string name="selection_line_thickness">Line selection thickness</string>
-    <string name="unlock_clues">To help create more, you can purchase any of my other Google Play apps.</string>
+    <string name="unlock_clues">Open source code at github.com/danielrhelmfelt/flipoku</string>
     <string name="no_ads_game">This game does not contain advertising and does not require internet access permissions.</string>
     <string name="victory">¡THE GAME HAS BEEN WON!</string>
     <string name="defeat">GAME LOST (+ than 3 mistakes)</string>
